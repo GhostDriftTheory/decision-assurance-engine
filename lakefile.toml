@@ -1,0 +1,7 @@
+name = "decision-assurance-engine"
+version = "0.1.0"
+defaultTargets = ["DecisionAssurance"]
+moreLeanArgs = ["-DwarningAsError=true"]
+
+[[lean_lib]]
+name = "DecisionAssurance"

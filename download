@@ -1,0 +1,8 @@
+output/
+.lake/
+lake-manifest.json
+__pycache__/
+*.pyc
+.env
+.env.*
+.DS_Store
