@@ -78,7 +78,8 @@ lake build                       # lean-toolchainに指定したLeanを使用
 
 確認環境はLinux、Python 3.13.5、Node.js 22.16.0、Chromium 144.0.7559.96です。ブラウザは同一HTMLを `set_content` で読み込み、デスクトップとモバイル幅で確認しました。実行環境の制限により `file://` の直接起動は未確認です。Windows／macOS実機とPython 3.10実機では未確認です。
 
-**LeanコンパイルとGitHub上でのActions実行は未確認です。** Leanの103定理宣言（一般・具体モデル23、有限表80）について、モデルとの対応と未証明プレースホルダー等の字句検査は実行していますが、それを証明成功とは扱いません。`lake build` の成功は別に確認する必要があります。
+GitHub Actions「Decision Assurance verification」の成功を2026年10月22日に確認しています。ワークフローにはLeanの `lake build`、`lake env lean DecisionAssurance.lean` および `sorryAx` 等の禁止依存の検査が含まれています。
+ただし、この検証結果は定義済みの形式モデルに関するものであり、Python／JavaScript実装全体や現実の行政判断の正しさを証明するものではありません。
 
 ## 任意のAI実験
 
